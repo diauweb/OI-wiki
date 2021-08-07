@@ -1,0 +1,13 @@
+name: 'UVa 437 The Tower of Babylon'
+description: '有 $n (n \leq 30)$ 种砖块，已知三条边长，每种都有无穷多个。要求选一些立方体摞成一根尽量高的柱子（每个砖块可以自行选择一条边作为高），使得每个砖块的底面长宽分别严格小于它下方砖块的底面长宽，求塔的最大高度。'
+timeLimit: 3000
+spaceLimit: 1000
+source: UVA
+solution: docs/dp/code/dag/dag_1.cpp
+testcases:
+    - input: docs/dp/examples/dag/dag_1.in
+      answer: docs/dp/examples/dag/dag_2.ans
+    - input: docs/dp/examples/dag/dag_1.in
+      answer: docs/dp/examples/dag/dag_1.ans
+    - input: docs/dp/examples/dag/dag_1.in
+      answer: docs/dp/examples/dag/dag_1.ans
