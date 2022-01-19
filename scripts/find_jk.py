@@ -26,9 +26,7 @@ def read_unihan_db():
             if key == 'kIICore':
                 db[int(ucode[2:], 16)] = value
 
-
-# no idea on how to select U+2F800..U+2FA1F so just assume they do not exist
-CJK_COMPAT = "[\u3300-\u33FF\uFE30-\uFE4F\uF900-\uFAFF]"
+CJK_COMPAT = "[\u3300-\u33FF\uFE30-\uFE4F\uF900-\uFAFF\U0002F800-\U0002FA1F]"
 CJK_EXT = "[\u3400-\u4DBF]"
 
 def get_cjk(cp):
